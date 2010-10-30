@@ -1,0 +1,13 @@
+<molgenis>
+	<entity name="Experiment">
+		<description>This are my experiments</description>
+		<field name="id" type="autoid" description="automatic id" />
+		<field name="name" unique="true" />
+	</entity>
+	<entiy name="Sample">
+		<field name="id" type="autoid" description="automatic id" />
+		<field name="name" unique="true" />
+		<field name="experiment" type="xref" xref_field="Experiment.id"
+			xref_label="name" />
+	</entiy>
+</molgenis>
