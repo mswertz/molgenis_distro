@@ -21,7 +21,7 @@
 # Should be jndi loaded!
 map:database a d2rq:Database;
 	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
-	d2rq:jdbcDSN "jdbc:mysql://localhost/test_molgenis?innodb_autoinc_lock_mode=2";
+	d2rq:jdbcDSN "jdbc:mysql://localhost:3306/molgenis_test?innodb_autoinc_lock_mode=2";
 	d2rq:username "molgenis";
 	d2rq:password "molgenis";
 	jdbc:autoReconnect "true";

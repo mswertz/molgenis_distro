@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
-	<persistence-unit name="molgenis-test" transaction-type="RESOURCE_LOCAL">
-		<exclude-unlisted-classes>false</exclude-unlisted-classes>
-		<properties>
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/molgenis_jpa" />
-			<property name="javax.persistence.jdbc.password" value="molgenis" />
-			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.user" value="molgenis" />
-			<property name="javax.persistence.target-database" value="MySQL" />
-			<property name="eclipselink.logging.level" value="INFO" />
-			<property name="eclipselink.ddl-generation" value="create-tables" />
-			<property name="eclipselink.logging.logger"
-				value="org.eclipse.persistence.logging.CommonsLoggingSessionLog" />
-		</properties>
-	</persistence-unit>
+<persistence version="1.0" 
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+<!--
+    <persistence-unit name="molgenis" transaction-type="RESOURCE_LOCAL">
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@dbms7.service.rug.nl:1521:lifel01"/>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
+            <property name="javax.persistence.jdbc.user" value="lifelines"/>
+            <property name="javax.persistence.jdbc.password" value="joris037"/>
+            <property name="eclipselink.logging.level" value="SEVERE"/>
+            <property name="eclipselink.jdbc.batch-writing" value="Oracle-JDBC"/>
+        </properties>
+    </persistence-unit>
+-->
+<!--            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
+
+<persistence-unit name="molgenis" transaction-type="RESOURCE_LOCAL">
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/molgenis_test"/>
+      <property name="javax.persistence.jdbc.password" value="molgenis"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="molgenis"/>
+      <property name="eclipselink.logging.level" value="SEVERE"/>
+
+      <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+      <property name="eclipselink.jdbc.batch-writing" value="JDBC"/>
+
+      </properties>
+    </persistence-unit>
+
+    <persistence-unit name="molgenis_test" transaction-type="RESOURCE_LOCAL">
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/molgenis_test2"/>
+            <property name="javax.persistence.jdbc.password" value="molgenis"/>
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="molgenis"/>
+            <property name="eclipselink.logging.level" value="SEVERE"/>
+            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+        </properties>
+    </persistence-unit>
 </persistence>
