@@ -7,7 +7,7 @@
 		username="molgenis"
 		password="molgenis" 
 		driverClassName="com.mysql.jdbc.Driver" 
-		url="jdbc:mysql://localhost:3306/molgenis_test?innodb_autoinc_lock_mode=2" 
+		url="jdbc:mysql://localhost:3306/molgenis?innodb_autoinc_lock_mode=2" 
 		removeAbandoned="true"
 		maxActive="8" 
 		maxIdle="4"/>		
