@@ -3,19 +3,7 @@
              xmlns="http://java.sun.com/xml/ns/persistence"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
-<!--
-    <persistence-unit name="molgenis" transaction-type="RESOURCE_LOCAL">
-        <exclude-unlisted-classes>false</exclude-unlisted-classes>
-        <properties>
-            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@dbms7.service.rug.nl:1521:lifel01"/>
-            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.driver.OracleDriver"/>
-            <property name="javax.persistence.jdbc.user" value="lifelines"/>
-            <property name="javax.persistence.jdbc.password" value="joris037"/>
-            <property name="eclipselink.logging.level" value="SEVERE"/>
-            <property name="eclipselink.jdbc.batch-writing" value="Oracle-JDBC"/>
-        </properties>
-    </persistence-unit>
--->
+
 <!--            <property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>-->
 
 <persistence-unit name="molgenis" transaction-type="RESOURCE_LOCAL">
