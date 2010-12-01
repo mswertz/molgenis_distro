@@ -11,4 +11,4 @@ How to view the results
 - Re-compile your project 
   (in Eclipse, right-mouse button on molgenis_distro and then 'refresh'
 - Run on web server 
-  (in Eclipse, right-click on 
+  (in Eclipse, right-click on  
