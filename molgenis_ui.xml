@@ -15,5 +15,6 @@
 			</menu>
 		</form>
 		<plugin name="PluginExample" type="plugins.genericwizard.GenericWizard" />
+		<plugin name="SmartPlugin" type="plugins.newmodel.SmartPlugin"/>
 	</menu>
 </molgenis>
