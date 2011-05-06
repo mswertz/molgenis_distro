@@ -20,7 +20,7 @@ public class SmartPlugin extends org.molgenis.framework.ui.GenericPlugin
 
 	public SmartPlugin(String name, ScreenController<?> parent)
 	{
-		super(name, parent);
+		super(name, parent); 
 	}
 	
 	/** Action setName: set name to hello */
