@@ -9,7 +9,7 @@ package plugins.hello;
 
 import org.molgenis.framework.db.Database;
 import org.molgenis.framework.ui.PluginModel;
-import org.molgenis.framework.ui.ScreenModel;
+import org.molgenis.framework.ui.ScreenController;
 import org.molgenis.framework.ui.html.ActionInput;
 import org.molgenis.framework.ui.html.HtmlInput;
 import org.molgenis.framework.ui.html.StringInput;
@@ -19,7 +19,7 @@ public class World extends PluginModel
 {
 	String name = "world";
 	
-	public World(String name, ScreenModel parent)
+	public World(String name, ScreenController<?> parent)
 	{
 		super(name, parent);
 	}

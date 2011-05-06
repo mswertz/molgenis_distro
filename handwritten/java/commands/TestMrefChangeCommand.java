@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.molgenis.framework.db.Database;
 import org.molgenis.framework.db.DatabaseException;
-import org.molgenis.framework.ui.FormModel;
+import org.molgenis.framework.ui.ScreenController;
 import org.molgenis.framework.ui.ScreenModel;
 import org.molgenis.framework.ui.commands.AddCommand;
 import org.molgenis.framework.ui.html.HtmlInput;
@@ -18,7 +18,7 @@ import org.molgenis.util.Tuple;
  */
 public class TestMrefChangeCommand extends AddCommand
 {
-	public TestMrefChangeCommand(FormModel s)
+	public TestMrefChangeCommand(ScreenController<?> s)
 	{
 		//create new method
 		super("change_mref_automatically", s);
