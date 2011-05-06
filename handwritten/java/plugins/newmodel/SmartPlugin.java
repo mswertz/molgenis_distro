@@ -8,7 +8,7 @@
 package plugins.newmodel;
 
 import org.molgenis.framework.db.Database;
-import org.molgenis.framework.ui.ScreenModel;
+import org.molgenis.framework.ui.ScreenController;
 import org.molgenis.framework.ui.html.ActionInput;
 import org.molgenis.framework.ui.html.StringInput;
 import org.molgenis.util.Tuple;
@@ -18,7 +18,7 @@ public class SmartPlugin extends org.molgenis.framework.ui.GenericPlugin
 	public StringInput nameInput = new StringInput("name");
 	public ActionInput helloInput = new ActionInput("setName");
 
-	public SmartPlugin(String name, ScreenModel parent)
+	public SmartPlugin(String name, ScreenController<?> parent)
 	{
 		super(name, parent);
 	}
