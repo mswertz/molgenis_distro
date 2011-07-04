@@ -26,7 +26,7 @@ public class TestMrefChangeCommand extends AddCommand
 	}
 
 	@Override
-	public List<HtmlInput> getInputs() throws DatabaseException
+	public List<HtmlInput<?>> getInputs() throws DatabaseException
 	{
 		//not used
 		return null;
