@@ -33,7 +33,7 @@ public class TestXrefChangeCommand extends AddCommand
 	}
 	
 	@Override
-	public List<HtmlInput> getActions()
+	public List getActions()
 	{
 		//not used
 		return null;
