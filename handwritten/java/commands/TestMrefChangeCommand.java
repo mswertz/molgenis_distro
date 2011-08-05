@@ -1,7 +1,7 @@
 package commands;
 
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.OutputStream;
 import java.text.ParseException;
 import java.util.List;
 
@@ -40,7 +40,7 @@ public class TestMrefChangeCommand extends AddCommand
 	}
 	
 	@Override
-	public ScreenModel.Show handleRequest(Database db, Tuple request, PrintWriter downloadStream) throws ParseException, DatabaseException, IOException
+	public ScreenModel.Show handleRequest(Database db, Tuple request, OutputStream downloadStream) throws ParseException, DatabaseException, IOException
 	{
 		//not used
 		return null;
