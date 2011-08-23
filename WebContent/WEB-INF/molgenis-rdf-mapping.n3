@@ -21,7 +21,7 @@
 # Should be jndi loaded!
 map:database a d2rq:Database;
 	d2rq:jdbcDriver "com.mysql.jdbc.Driver";
-	d2rq:jdbcDSN "jdbc:mysql://localhost:3306/molgenis?innodb_autoinc_lock_mode=2";
+	d2rq:jdbcDSN "jdbc:mysql://localhost/molgenis?innodb_autoinc_lock_mode=2";
 	d2rq:username "molgenis";
 	d2rq:password "molgenis";
 	jdbc:autoReconnect "true";
@@ -50,12 +50,12 @@ map:Experiment_description a d2rq:PropertyBridge;
 	d2rq:column "Experiment.Description";
 	d2rq:datatype xsd:text;
 	.
-map:Experiment_date a d2rq:PropertyBridge;
+map:Experiment_creationDate a d2rq:PropertyBridge;
 	d2rq:belongsToClassMap map:Experiment;
-	d2rq:property vocab:Experiment_Date;
-	d2rq:propertyDefinitionLabel "Date";
+	d2rq:property vocab:Experiment_CreationDate;
+	d2rq:propertyDefinitionLabel "CreationDate";
 	d2rq:propertyDefinitionComment "Creation date, with an automatic default to 'today'";
-	d2rq:column "Experiment.Date";
+	d2rq:column "Experiment.CreationDate";
 	d2rq:datatype xsd:date;
 	.
 map:Experiment_id a d2rq:PropertyBridge;

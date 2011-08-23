@@ -21,7 +21,7 @@
 		<description>Summary of an experiment.</description>
 		<field name="Description" type="text" nillable="true"
 			description="Optional description text" />
-		<field name="Date" type="date" auto="true"
+		<field name="CreationDate" type="date" auto="true"
 			description="Creation date, with an automatic default to 'today'" />
 	</entity>
 	<!-- sample description structure -->
