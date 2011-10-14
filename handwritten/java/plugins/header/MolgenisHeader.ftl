@@ -13,5 +13,5 @@
 		&nbsp;${application.getLabel()}
 	</p>
 </div>
-<div align="right" style="color: maroon; font: 12px Arial;margin-right: 10px;"><a href="about.html">About</a>  | <a href="generated-doc/objectmodel.html">Data model</a>  | <a href="generated-doc/fileformat.html">File format</a> | <a href="api/R">R-interface</a> | <a href="api/find">HTTP</a> | <a href="api/rest/?_wadl">REST</a> | <a href="api/soap?wsdl">SOAP</a> | <a href="rdf.html">RDF</a>.</div>
+<div align="right" style="color: maroon; font: 12px Arial;margin-right: 10px;"><a href="about.html">About</a>  | <a href="generated-doc/objectmodel.html">Data model</a>  | <a href="generated-doc/fileformat.html">File format</a> | <a href="api/R">R-interface</a> | <a href="api/find">HTTP</a> | <a href="api/rest/?_wadl">REST</a> | <a href="api/soap?wsdl">SOAP</a></div>
 </#macro>
