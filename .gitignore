@@ -1,0 +1,11 @@
+generated/
+doc/
+data/
+nbbuild/
+tmp/
+
+tmp*
+log*
+
+.classpath
+.settings
