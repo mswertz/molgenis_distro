@@ -7,6 +7,12 @@ doc/
 data/
 nbbuild/
 tmp/
+test-output/
+WebContent/generated-doc/
+WebContent/generated-res/
+handwritten/java/plugins/empty/
+WebContent/META-INF/context.xml
+WebContent/WEB-INF/molgenis-rdf-mapping.n3
 
 ## Always ignore these
 *~
